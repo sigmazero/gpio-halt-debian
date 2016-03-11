@@ -1,0 +1,12 @@
+[Unit]
+Description=Shutdown on button press
+#After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/gpio_halt.sh
+ExecStart=/user/bin/gpio_halt
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
