@@ -51,5 +51,5 @@ while [ 1=1 ]
 done
 # Call code here to execute before shutdown
 echo "Button held, shutting down."
-sleep 5
+sleep 2 #sleep in two seconds
 /bin/systemctl poweroff --message="Shutdown initiated by GPIO interrupt."

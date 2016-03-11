@@ -4,7 +4,7 @@ Description=Shutdown on button press
 
 [Service]
 Type=simple
-ExecStart=/user/bin/gpio_halt
+ExecStart=/usr/bin/gpio_halt
 Restart=on-failure
 
 [Install]
